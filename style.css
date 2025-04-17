@@ -426,3 +426,22 @@ footer.contact {
     padding: 12px 15px;
   }
   }
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btn-outline:hover {
+  background: #007bff;
+  color: white;
+}
