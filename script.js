@@ -84,3 +84,21 @@ document.querySelectorAll('.navbar ul li a').forEach(link => {
     }
   });
 });
+// Download CV functionality
+document.getElementById('download-cv').addEventListener('click', function(e) {
+  e.preventDefault();
+  
+  // Ganti dengan URL file CV Anda
+  const cvUrl = 'path/to/your-cv.pdf';
+  
+  // Membuat elemen <a> sementara untuk download
+  const link = document.createElement('a');
+  link.href = cvUrl;
+  link.download = 'Husen-Fahmi-CV.pdf'; // Nama file saat didownload
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  // Optional: Tambahkan notifikasi
+  alert('Download CV akan segera dimulai');
+});
