@@ -445,3 +445,21 @@ footer.contact {
   background: #007bff;
   color: white;
 }
+
+/* Pastikan service-grid menampung semua item */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Style dasar service-box */
+.service-box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
