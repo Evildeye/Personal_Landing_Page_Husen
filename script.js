@@ -102,3 +102,9 @@ document.getElementById('download-cv').addEventListener('click', function(e) {
   // Optional: Tambahkan notifikasi
   alert('Download CV akan segera dimulai');
 });
+
+// Download CV dari tombol hero
+document.getElementById('hero-download-cv').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('download-cv').click();
+});
