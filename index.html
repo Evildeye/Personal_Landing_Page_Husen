@@ -8,52 +8,90 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>HUSEN FAHMI</h1>
-      <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
-      <nav id="navbar" class="hidden">
-        <ul>
-          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">HUSEN FAHMI</div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-  </header>
-  <main>
-    <section class="hero">
-      <h2>Hello, I'm Husen Fahmi</h2>
+    <ul>
+      <li><a href="#about"><i class="fas fa-user"></i></a></li>
+      <li><a href="#services"><i class="fas fa-cogs"></i></a></li>
+      <li><a href="#portfolio"><i class="fas fa-briefcase"></i></a></li>
+      <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.jobstreet.co.id" target="_blank"><i class="fas fa-briefcase"></i></a></li>
+      <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Husen Fahmi</span></h1>
       <p>Web Developer & Tech Enthusiast</p>
-      <a href="#work">View My Work</a>
-    </section>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="IMG_0045.jpeg" alt="Profile" />
-      <p>
-        Saya adalah seorang pengembang web yang berdedikasi dengan semangat tinggi terhadap teknologi dan inovasi.
-        Saya senang membangun solusi kreatif untuk web dan selalu belajar hal baru dalam dunia coding.
-      </p>
-    </section>
-    <section id="services">
-      <h2>My Services</h2>
-      <div class="service">
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="container">
+      <img src="IMG_0045.jpeg" alt="Profile" class="rounded-frame" />
+      <div class="about-text">
+        <p>Saya adalah seorang pengembang web yang berdedikasi dengan semangat tinggi terhadap teknologi dan inovasi. Saya senang membangun solusi kreatif untuk web dan selalu belajar hal baru dalam dunia coding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">My Services</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-box">
         <i class="fas fa-laptop-code"></i>
         <h3>Web Development</h3>
       </div>
-      <div class="service">
+      <div class="service-box">
         <i class="fas fa-mobile-alt"></i>
         <h3>Responsive Design</h3>
       </div>
-      <div class="service">
+      <div class="service-box">
         <i class="fas fa-server"></i>
         <h3>Backend Integration</h3>
       </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Husen Fahmi. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">My Portfolio</h2>
+    </div>
+    <div class="portfolio-grid">
+      <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+      <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="contact">
+    <p>Get in touch: husen@example.com</p>
+    <div class="social-icons">
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fas fa-briefcase"></i>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
